@@ -1,0 +1,6 @@
+module Pods_growup_growupTests {
+  umbrella header "Pods-growup-growupTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

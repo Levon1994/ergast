@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-498350580/@react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-498350580/@react-native-community_async-storage.iml" group="growup/@react-native-community_async-storage" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="growup/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growup.iml" filepath="$PROJECT_DIR$/.idea/modules/growup.iml" group="growup" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-498350580/react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-498350580/react-native-community_async-storage.iml" group="growup/react-native-community_async-storage" />
+    </modules>
+  </component>
+</project>
