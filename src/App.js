@@ -4,14 +4,10 @@ import {
   SafeAreaView,
   Dimensions,
 } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+
+import { Navigation } from './screens';
 
 import store from './stores';
-
-import { Home } from './screens';
-
-const Stack = createStackNavigator();
 
 const App = () => {
   const fullWidth = Dimensions.get('window').width;
@@ -25,15 +21,7 @@ const App = () => {
         height: fullHeight, 
         backgroundColor: '#f0f0f0',
       }}>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen 
-              name="Home" 
-              component={Home} 
-              options={{ headerShown: false }}
-            />
-          </Stack.Navigator>
-      </NavigationContainer>
+        <Navigation/>
       </SafeAreaView>
     </Provider>
   );

@@ -15,6 +15,7 @@ const mapStateToProps = ({ drivers }) => ({ drivers });
 
 const Home = ({
   drivers,
+  navigation,
   getDrivers,
 }) => {
   const [isBusy, setIsBusy] = useState(false);
@@ -28,7 +29,12 @@ const Home = ({
   }, [offset]);
 
   const onRenderDriver = useCallback(({ item }) => (
-    <Card {...item}/>
+    <Card 
+      {...item}
+      onPress={() => {
+        navigation.navigate('Driver', { driverId: item.driverId })
+      }}
+    />
   ), [drivers]);
 
   return (

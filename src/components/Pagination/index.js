@@ -42,8 +42,6 @@ const Pagination = ({
     onPageChange(page)
   },[page, onPageChange]);
 
-  console.log('paginationContent :::', paginationContent);
-
   return (
     <View style={localStyles.main}>
       <View style={localStyles.content}>

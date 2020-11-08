@@ -9,6 +9,7 @@ import {
 const Card = ({ 
   url,
   style,
+  onPress,
   givenName,
   familyName,
   nationality,
@@ -27,7 +28,10 @@ const Card = ({
 
   return (
     <TouchableOpacity 
-      onPress={() => onOpenUrl(url)}
+      onPress={() => {
+        console.log('More Info URL :::', url);
+        onPress();
+      }}
       style={{ ...style, ...localStyles.main }}
     >
       <Text style={localStyles.text}>Name: {givenName} {familyName}, {nationality}</Text>

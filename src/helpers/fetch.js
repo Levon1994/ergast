@@ -20,11 +20,8 @@ export default class Fetch {
             requestOptions.body = data;
         }
         // Fire the Request and Return the response promise Object
-        const response = await fetch(new Request(`${BASE_URL}${path}`, requestOptions))
-        .then(res => res.json())
+        return await fetch(new Request(`${BASE_URL}${path}`, requestOptions))
         .then(res => res);
-
-        return response;
     }
 
     /* GET (retrieve) */
